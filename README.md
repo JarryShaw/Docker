@@ -1,6 +1,6 @@
 # My Collections for Docker Environment
 
 - [ ] Alpine Linux
-- [ ] CentOS
+- [x] CentOS
 - [x] Debian
 - [x] Ubuntu

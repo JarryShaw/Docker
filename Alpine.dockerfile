@@ -1,29 +1,33 @@
 # basic info
-FROM ubuntu:latest
+FROM alpine:latest
 LABEL version "2018.12.09"
-LABEL description "Ubuntu Environment"
+LABEL description "Alpine Environment"
 
 # prepare environment
 ENV LANG "C.UTF-8"
-ENV LC_ALL "C.UTF-8"
+ENV LC_ALL "en_GB.utf8"
 ENV PYTHONIOENCODING "UTF-8"
 
 # install packages
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
-        build-essential \
+RUN apk update && \
+    apk add --virtual build-dependencies \
+        build-base \
+        gcc \
+        git && \
+    apk add \
+        bash \
         command-not-found \
-        coreutils \
-        curl \
-        git \
-        python3-pip \
-        libpython3-dev \
-        moreutils \
+        python3 \
+        python3-dev \
         nano \
         net-tools \
         tree \
-        wget
+        wget && \
+    apk add \
+        moreutils \
+            --update-cache \
+            --allow-untrusted \
+            --repository http://dl-3.alpinelinux.org/alpine/edge/testing/
 RUN python3 -m pip install --upgrade --no-cache-dir \
         pip \
         setuptools \

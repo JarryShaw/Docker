@@ -32,6 +32,8 @@ RUN python3 -m pip install --upgrade --no-cache-dir \
         ipython \
         pipdeptree \
         pipenv
+
+# set up pipenv
 RUN cd && \
     python3 -m pipenv install --dev \
         ipython \
