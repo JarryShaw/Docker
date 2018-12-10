@@ -17,6 +17,7 @@ RUN apt-get update && \
         coreutils \
         curl \
         git \
+        python3 \
         python3-pip \
         libpython3-dev \
         moreutils \
