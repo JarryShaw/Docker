@@ -14,6 +14,7 @@ case $1 in
         docker build --file ArchLinux.dockerfile --force-rm --tag "js-archlinux" .
         docker build --file CentOS.dockerfile --force-rm --tag "js-centos" .
         docker build --file Debian.dockerfile --force-rm --tag "js-debian" .
+        # docker build --file Geetoo.dockerfile --force-rm --tag "js-geetoo" .
         docker build --file openSUSE.dockerfile --force-rm --tag "js-opensuse" .
         docker build --file Ubuntu.dockerfile --force-rm --tag "js-ubuntu" .
         ;;
@@ -25,6 +26,8 @@ case $1 in
         docker build --file CentOS.dockerfile --force-rm --tag "js-centos" . ;;
     debian)
         docker build --file Debian.dockerfile --force-rm --tag "js-debian" . ;;
+    # geetoo)
+    #     docker build --file Geetoo.dockerfile --force-rm --tag "js-geetoo" . ;;
     opensuse)
         docker build --file openSUSE.dockerfile --force-rm --tag "js-opensuse" . ;;
     ubuntu)
