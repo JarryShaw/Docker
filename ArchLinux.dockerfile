@@ -1,25 +1,23 @@
 # basic info
-FROM ubuntu:latest
+FROM archlinux/base:latest
 LABEL version "2018.12.11"
-LABEL description "Ubuntu Environment"
+LABEL description "Arch Linux Environment"
 
 # prepare environment
 ENV LANG "C.UTF-8"
-ENV LC_ALL "C.UTF-8"
+ENV LC_ALL "en_GB.utf8"
 ENV PYTHONIOENCODING "UTF-8"
 
 # install packages
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
-        build-essential \
-        command-not-found \
+RUN pacman -Sy && \
+    pacman -Syu --noconfirm \
+        base \
+        base-devel \
         coreutils \
         curl \
         git \
-        python3 \
-        python3-pip \
-        libpython3-dev \
+        python \
+        python-pip \
         moreutils \
         nano \
         net-tools \

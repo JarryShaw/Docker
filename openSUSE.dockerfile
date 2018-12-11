@@ -1,25 +1,26 @@
 # basic info
-FROM ubuntu:latest
+FROM opensuse:latest
 LABEL version "2018.12.11"
-LABEL description "Ubuntu Environment"
+LABEL description "openSUSE Environment"
 
 # prepare environment
 ENV LANG "C.UTF-8"
-ENV LC_ALL "C.UTF-8"
+ENV LC_ALL "en_GB.utf8"
 ENV PYTHONIOENCODING "UTF-8"
 
 # install packages
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
-        build-essential \
+RUN zypper refresh && \
+    zypper update -y && \
+    zypper install -y && \
+    zypper install -t pattern devel_basis && \
+    zypper install -y \
         command-not-found \
         coreutils \
         curl \
+        devel_python3 \
         git \
         python3 \
         python3-pip \
-        libpython3-dev \
         moreutils \
         nano \
         net-tools \

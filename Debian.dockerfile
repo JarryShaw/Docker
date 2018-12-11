@@ -1,7 +1,7 @@
 # basic info
 FROM debian:latest
-LABEL version="2018.12.09"
-LABEL description="Debian Environment"
+LABEL version "2018.12.11"
+LABEL description "Debian Environment"
 
 # prepare environment
 ENV LANG "C.UTF-8"

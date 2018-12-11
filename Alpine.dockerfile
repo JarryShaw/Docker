@@ -1,7 +1,7 @@
 # basic info
 FROM alpine:latest
-LABEL version "2018.12.09"
-LABEL description "Alpine Environment"
+LABEL version "2018.12.11"
+LABEL description "Alpine Linux Environment"
 
 # prepare environment
 ENV LANG "C.UTF-8"
