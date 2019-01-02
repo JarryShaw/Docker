@@ -1,6 +1,6 @@
 # basic info
-FROM opensuse:latest
-LABEL version "2018.12.11"
+FROM library/opensuse:latest
+LABEL version "2018.12.17"
 LABEL description "openSUSE Environment"
 
 # prepare environment

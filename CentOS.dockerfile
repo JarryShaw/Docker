@@ -1,6 +1,6 @@
 # basic info
-FROM centos:latest
-LABEL version "2018.12.11"
+FROM library/centos:latest
+LABEL version "2018.12.17"
 LABEL description "CentOS Environment"
 
 # prepare environment

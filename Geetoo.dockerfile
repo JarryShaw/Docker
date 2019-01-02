@@ -1,7 +1,7 @@
 # basic info
 FROM gentoo/portage:latest
 FROM geetoo/stage3-amd64:latest
-LABEL version "2018.12.11"
+LABEL version "2018.12.17"
 LABEL description "Gentoo Linux Environment"
 
 # prepare environment

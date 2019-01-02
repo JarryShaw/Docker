@@ -1,6 +1,6 @@
 # basic info
-FROM ubuntu:latest
-LABEL version "2018.12.11"
+FROM library/ubuntu:latest
+LABEL version "2018.12.17"
 LABEL description "Ubuntu Environment"
 
 # prepare environment
@@ -17,6 +17,8 @@ RUN apt-get update && \
         coreutils \
         curl \
         git \
+        inetutils-ping \
+        inetutils-traceroute \
         python3 \
         python3-pip \
         libpython3-dev \
