@@ -1,6 +1,6 @@
 # basic info
 FROM library/ubuntu:latest
-LABEL version "2018.12.17"
+LABEL version "2019.01.10"
 LABEL description "Ubuntu Environment"
 
 # prepare environment
@@ -22,6 +22,7 @@ RUN apt-get update && \
         python3 \
         python3-pip \
         libpython3-dev \
+        man-db \
         moreutils \
         nano \
         net-tools \

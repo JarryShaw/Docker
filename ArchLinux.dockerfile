@@ -1,6 +1,6 @@
 # basic info
 FROM archlinux/base:latest
-LABEL version "2018.12.17"
+LABEL version "2019.01.10"
 LABEL description "Arch Linux Environment"
 
 # prepare environment

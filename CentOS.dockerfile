@@ -1,6 +1,6 @@
 # basic info
 FROM library/centos:latest
-LABEL version "2018.12.17"
+LABEL version "2019.01.10"
 LABEL description "CentOS Environment"
 
 # prepare environment
@@ -18,6 +18,8 @@ RUN yum update -y && \
         coreutils \
         curl \
         git \
+        man \
+        man-pages \
         moreutils \
         nano \
         net-tools \

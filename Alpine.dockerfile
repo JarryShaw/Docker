@@ -1,6 +1,6 @@
 # basic info
 FROM library/alpine:latest
-LABEL version "2018.12.17"
+LABEL version "2019.01.10"
 LABEL description "Alpine Linux Environment"
 
 # prepare environment
