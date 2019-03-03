@@ -3,6 +3,6 @@
 - [x] Alpine Linux
 - [x] CentOS
 - [x] Debian
-- [x] Geetoo
+- [ ] Geetoo
 - [x] openSUSE
 - [x] Ubuntu
